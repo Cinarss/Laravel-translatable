@@ -26,7 +26,6 @@ Here, we loop through the configured languages and create a tab for each languag
 
 The ArticleController handles the request and stores the article information in the database:
 
-
 public function store(Request $request)
 {
 $article = new Article();
@@ -40,6 +39,8 @@ $article->save();
 
 return redirect()->route('articles.index')->with('success', 'Article saved successfully');
 }
+
+
 Setup
 To get started with this project:
 
